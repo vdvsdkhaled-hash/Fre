@@ -1,0 +1,36 @@
+{
+  "name": "gemini-code-editor",
+  "version": "1.0.0",
+  "description": "Advanced AI Code Editor powered by Gemini 3 Flash - Similar to Cursor/Windsurf",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": ["ai", "code-editor", "gemini", "cursor", "windsurf"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ws": "^8.16.0",
+    "chokidar": "^3.6.0",
+    "monaco-editor": "^0.45.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-split-pane": "^0.1.92",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.0",
+    "concurrently": "^8.2.2"
+  }
+}
